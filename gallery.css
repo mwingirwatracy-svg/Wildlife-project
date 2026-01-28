@@ -1,8 +1,14 @@
-h1,h2{
+h1,h2, h3{
     text-align: center;
     color:rgb(62, 106, 43);
     background-color: rgb(147, 161, 38);
 }
+
+h5,h4{
+    color: rgb(15, 99, 66);
+    text-align: left;
+}
+
 p{
     
     font-family:'Times New Roman', Times, serif;
@@ -66,4 +72,47 @@ header nav a {
 header nav a:hover {
     color: rgb(147, 161, 38);
     text-decoration: underline;
+}
+.animal-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin: 10px;
+    max-width: 280px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 14px;
 }
